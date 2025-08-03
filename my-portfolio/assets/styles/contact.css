@@ -1,0 +1,305 @@
+/* Navbar */
+header > nav {
+    box-shadow: 2px 2px 4px #00000080;
+    background-color: #060d1d;
+}
+
+/* Request project section */
+
+.request-project {
+    color: #fff;
+    padding: 150px 9%;
+    background-color: #081228;
+    height: auto;
+}
+
+.request-project > div > div:nth-child(1) {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.request-project > div > div:nth-child(1) > h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    font-weight: 600;
+    line-height: 1.2;
+    z-index: 2;
+}
+.request-project > div > div:nth-child(1) > p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    line-height: 1.5;
+    z-index: 2;
+    max-width: 800px;
+    text-align: center;
+}
+
+.request-project > div > div.hero-image {
+    position: relative;
+}
+
+.request-project > div > div.hero-image > div.blob.blob-1 {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: -220px;
+    right: 180px;
+    background-image: linear-gradient(-360deg, #081228, #ea5656);
+    border-radius: 50%;
+    z-index: 1;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    opacity: 0.5;
+}
+
+.request-project > div > div.hero-image > div.blob.blob-2 {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    top: 30px;
+    right: 60px;
+    background-image: linear-gradient(180deg, #4fce4f, #081228);
+    border-radius: 50%;
+    z-index: 2;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    opacity: 0.5;
+}
+.request-project > div > div.hero-image > div.blob.blob-3 {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    bottom: 80px;
+    right: 20px;
+    background-image: linear-gradient(180deg, #fde400, #081228);
+    border-radius: 50%;
+    z-index: 1;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    opacity: 0.5;
+}
+
+
+/* Contact section */
+section.contact {
+    color: #081228;
+    padding: 80px 9%;
+    display: flex;
+    gap: 50px;
+    justify-content: space-between;
+}
+
+
+.contact > div:nth-child(1) > img{
+    width: 550px;
+    height: auto;
+    border-radius: 20px;
+}
+
+.contact > div.box-container > h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 1.2;
+}
+
+.contact > div.box-container > div{
+    margin-bottom: 20px;
+}
+
+
+.contact > div.box-container > div > p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+div.info-item {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+
+body > main > section.contact > div.box-container > div > div > div {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #081228;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+body > main > section.contact > div.box-container > div > div > div > div {
+    font-size: 1.5rem;
+    color: #fff;
+    background-color: #ea5656;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+#contactUs-Form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 50px;
+}
+
+#contactUs-Form > label {
+    font-size: 1.2rem;
+    color: #081228;
+}
+
+#contactUs-Form > input,
+#contactUs-Form > textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #081228;
+    border: none;
+}
+
+#contactUs-Form > input:focus,
+#contactUs-Form > textarea:focus {
+    outline: none;
+}
+
+#contactUs-Form > button {
+    background-color: #ea5656;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/* Mobile (max-width: 600px) */
+@media (max-width: 600px) {
+  .request-project {
+    padding: 100px 5%;
+    text-align: center;
+  }
+
+  .request-project > div > div:nth-child(1) > h2 {
+    font-size: 1.8rem;
+  }
+
+  .request-project > div > div:nth-child(1) > p {
+    font-size: 1rem;
+    max-width: 100%;
+  }
+
+  .request-project > div > div.hero-image > div.blob.blob-1,
+  .request-project > div > div.hero-image > div.blob.blob-2,
+  .request-project > div > div.hero-image > div.blob.blob-3 {
+    display: none;
+  }
+
+  section.contact {
+    flex-direction: column;
+    padding: 50px 5%;
+    gap: 30px;
+  }
+
+  .contact > div:nth-child(1) > img {
+    width: 100%;
+    height: auto;
+  }
+
+  .contact > div.box-container > h2 {
+    font-size: 2rem;
+  }
+
+  .contact > div.box-container > div > p {
+    font-size: 1rem;
+  }
+
+  div.info-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  body > main > section.contact > div.box-container > div > div > div {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+
+  body > main > section.contact > div.box-container > div > div > div {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  #contactUs-Form {
+    padding-top: 30px;
+  }
+
+  #contactUs-Form > label {
+    font-size: 1rem;
+  }
+
+  #contactUs-Form > button {
+    width: 100%;
+  }
+}
+
+
+/* Tablet (min-width: 601px and max-width: 991px) */
+
+@media (min-width: 601px) and (max-width: 991px) {
+  .request-project {
+    padding: 120px 7%;
+  }
+
+  .request-project > div > div:nth-child(1) > h2 {
+    font-size: 2.2rem;
+  }
+
+  .request-project > div > div:nth-child(1) > p {
+    font-size: 1.1rem;
+    max-width: 90%;
+  }
+
+  .request-project > div > div.hero-image > div.blob.blob-1,
+  .request-project > div > div.hero-image > div.blob.blob-2,
+  .request-project > div > div.hero-image > div.blob.blob-3 {
+    opacity: 0.3;
+    transform: scale(0.8);
+  }
+
+  section.contact {
+    flex-direction: column;
+    gap: 40px;
+    padding: 60px 7%;
+  }
+
+  .contact > div:nth-child(1) > img {
+    width: 100%;
+    height: auto;
+  }
+
+  .contact > div.box-container > h2 {
+    font-size: 2.2rem;
+  }
+
+  div.info-item {
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  #contactUs-Form {
+    padding-top: 40px;
+  }
+
+  #contactUs-Form > label {
+    font-size: 1.1rem;
+  }
+}
