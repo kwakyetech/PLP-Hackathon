@@ -1,0 +1,149 @@
+.portfolio{
+    margin-top: 70px;
+    padding: 50px 9%;
+}
+
+.portfolio-header {
+  max-width: 500px;
+  margin-bottom: 2rem;
+}
+
+.portfolio-header .subtitle {
+  color: rgb(245, 196, 133);
+  font-weight: bold;
+}
+
+.portfolio-header h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 0.5rem 0;
+  line-height: 1.1;
+}
+
+.portfolio-header h2 span {
+  color: #5F3DC4;
+}
+
+.portfolio-header .description {
+  color: #555;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  height: fit-content;
+}
+
+.card {
+  background-color: white;
+  border-radius: 20px;
+  overflow: hidden;
+  padding: 0;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  height: fit-content;
+}
+
+.card img {
+  width: 100%;
+  display: block;
+  border-bottom: 1px solid #eee;
+}
+
+.card h3 {
+  padding: 2.5rem 1rem 0.7rem;
+  font-size: 1rem;
+}
+
+.card button {
+  margin: 0 1rem 1rem;
+  padding: 0.4rem 1rem;
+  border: 1px solid #5F3DC4;
+  border-radius: 20px;
+  background: none;
+  color: #5F3DC4;
+  cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.card button:hover {
+    background-color: #5F3DC4;
+    color: white;
+}
+
+.portfolio > div > div:nth-child(3){
+    margin-top: -180px;
+}
+
+.portfolio > div > div.item-1.card{
+    margin-top: -170px;
+}
+
+.portfolio > div > div:nth-child(7) {
+    margin-top: -160px;
+}
+
+.portfolio > div > div:nth-child(9) {
+    margin-top: -150px;
+}
+
+.portfolio > div > div:nth-child(11) {
+    margin-top: -140px;
+
+}
+
+
+
+/* ------------------- Tablet Breakpoint ------------------- */
+@media screen and (max-width: 991px) and (min-width: 601px) {
+  .portfolio {
+    padding: 40px 5%;
+  }
+
+  .portfolio-header h2 {
+    font-size: 2rem;
+  }
+
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+  }
+
+
+    .portfolio > div > div:nth-child(3),
+  .portfolio > div > div.item-1.card,
+  .portfolio > div > div:nth-child(7),
+  .portfolio > div > div:nth-child(9),
+  .portfolio > div > div:nth-child(11) {
+    margin-top: 0; /* Remove negative margins on small screens */
+  }
+}
+
+/* ------------------- Phone Breakpoint ------------------- */
+@media screen and (max-width: 600px) {.portfolio {
+    margin-top: 50px;
+    padding: 30px 5%;
+  }
+
+  .portfolio-header h2 {
+    font-size: 1.8rem;
+  }
+
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card h3 {
+    font-size: 0.95rem;
+  }
+
+
+  .portfolio > div > div:nth-child(3),
+  .portfolio > div > div.item-1.card,
+  .portfolio > div > div:nth-child(7),
+  .portfolio > div > div:nth-child(9),
+  .portfolio > div > div:nth-child(11) {
+    margin-top: 0; /* Remove negative margins on small screens */
+  }
+}
